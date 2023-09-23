@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-slice@deno/mod.js';
+import isSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-slice@v0.1.0-deno/mod.js';
 ```
 
 #### isSlice( value )
@@ -70,7 +70,7 @@ var bool = isSlice( s );
 
 ```javascript
 import Slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@deno/mod.js';
-import isSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-slice@deno/mod.js';
+import isSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-slice@v0.1.0-deno/mod.js';
 
 var out = isSlice( new Slice( 0, 10, 1 ) );
 // returns true
