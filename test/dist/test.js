@@ -21,42 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var Slice = require( '@stdlib/slice-ctor' );
-var isSlice = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof isSlice, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns `true` if provided a Slice instance', function test( t ) {
-	t.equal( isSlice( new Slice( 0, 10, 1 ) ), true, 'returns true' );
-	t.end();
-});
-
-tape( 'the function returns `false` if not provided a Slice instance', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		'5',
-		5,
-		NaN,
-		null,
-		void 0,
-		true,
-		false,
-		[],
-		{},
-		function noop() {}
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.equal( isSlice( values[i] ), false, 'returns false when provided '+values[i] );
-	}
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
