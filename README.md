@@ -106,6 +106,13 @@ out = isSlice( null );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/assert-is-multi-slice`][@stdlib/assert/is-multi-slice]</span><span class="delimiter">: </span><span class="description">test if a value is a MultiSlice object.</span>
+-   <span class="package-name">[`@stdlib/slice-ctor`][@stdlib/slice/ctor]</span><span class="delimiter">: </span><span class="description">slice constructor.</span>
+
 </section>
 
 <!-- /.related -->
@@ -180,6 +187,12 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-slice/main/LICENSE
 
 [@stdlib/slice/ctor]: https://github.com/stdlib-js/slice-ctor
+
+<!-- <related-links> -->
+
+[@stdlib/assert/is-multi-slice]: https://github.com/stdlib-js/assert-is-multi-slice
+
+<!-- </related-links> -->
 
 </section>
 
