@@ -35,14 +35,30 @@ limitations under the License.
 
 > Test if a value is a [`Slice`][@stdlib/slice/ctor].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-slice
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import isSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-slice@deno/mod.js';
+var isSlice = require( '@stdlib/assert-is-slice' );
 ```
 
 #### isSlice( value )
@@ -50,7 +66,7 @@ import isSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-slice@deno/
 Tests if a value is a [`Slice`][@stdlib/slice/ctor].
 
 ```javascript
-import Slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@deno/mod.js';
+var Slice = require( '@stdlib/slice-ctor' );
 
 var s = new Slice( 0, 10 );
 
@@ -69,8 +85,8 @@ var bool = isSlice( s );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import Slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@deno/mod.js';
-import isSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-slice@deno/mod.js';
+var Slice = require( '@stdlib/slice-ctor' );
+var isSlice = require( '@stdlib/assert-is-slice' );
 
 var out = isSlice( new Slice( 0, 10, 1 ) );
 // returns true
@@ -90,6 +106,13 @@ out = isSlice( null );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/assert-is-multi-slice`][@stdlib/assert/is-multi-slice]</span><span class="delimiter">: </span><span class="description">test if a value is a MultiSlice object.</span>
+-   <span class="package-name">[`@stdlib/slice-ctor`][@stdlib/slice/ctor]</span><span class="delimiter">: </span><span class="description">slice constructor.</span>
+
 </section>
 
 <!-- /.related -->
@@ -103,7 +126,7 @@ out = isSlice( null );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -163,7 +186,13 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-slice/main/LICENSE
 
-[@stdlib/slice/ctor]: https://github.com/stdlib-js/slice-ctor/tree/deno
+[@stdlib/slice/ctor]: https://github.com/stdlib-js/slice-ctor
+
+<!-- <related-links> -->
+
+[@stdlib/assert/is-multi-slice]: https://github.com/stdlib-js/assert-is-multi-slice
+
+<!-- </related-links> -->
 
 </section>
 
