@@ -16,21 +16,29 @@
 * limitations under the License.
 */
 
-import Slice = require( '@stdlib/slice-ctor' );
-import isSlice = require( './index' );
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { Slice } from '@stdlib/types/slice';
+
+/**
+* Tests if a value is a Slice object.
+*
+* @param value - value to test
+* @returns boolean indicating if a value is a Slice object
+*
+* @example
+* var Slice = require( `@stdlib/slice/ctor` );
+*
+* var s = new Slice( 0, 10, 1 );
+*
+* var bool = isSlice( s );
+* // returns true
+*/
+declare function isSlice( value: any ): value is Slice;
 
 
-// TESTS //
+// EXPORTS //
 
-// The function returns a boolean...
-{
-	isSlice( new Slice( 0, 10, 1 ) ); // $ExpectType boolean
-	isSlice( { 'start': 0, 'stop': 10, 'step': 1 } ); // $ExpectType boolean
-	isSlice( 123 ); // $ExpectType boolean
-}
-
-// The compiler throws an error if the function is provided an unsupported number of arguments...
-{
-	isSlice(); // $ExpectError
-	isSlice( new Slice( 0, 10, 1 ), 123 ); // $ExpectError
-}
+export = isSlice;
