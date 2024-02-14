@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/assert-is-slice",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Test if a value is a Slice object.",
   "license": "Apache-2.0",
   "author": {
@@ -37,9 +37,9 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/slice-ctor": "^0.1.0",
-    "@stdlib/types": "^0.2.0",
-    "@stdlib/utils-constructor-name": "^0.1.1"
+    "@stdlib/slice-ctor": "^0.2.0",
+    "@stdlib/types": "^0.3.1",
+    "@stdlib/utils-constructor-name": "^0.2.0"
   },
   "devDependencies": {
     "@stdlib/assert-is-boolean": "^0.1.1",
