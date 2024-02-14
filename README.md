@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-slice@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-slice/tags). For example,
+
+```javascript
 import isSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-slice@v0.2.0-deno/mod.js';
 ```
 
@@ -70,7 +75,7 @@ var bool = isSlice( s );
 
 ```javascript
 import Slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@deno/mod.js';
-import isSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-slice@v0.2.0-deno/mod.js';
+import isSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-slice@deno/mod.js';
 
 var out = isSlice( new Slice( 0, 10, 1 ) );
 // returns true
