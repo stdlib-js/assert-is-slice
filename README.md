@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-slice@esm/index.mjs';
+import isSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-slice@v0.2.1-esm/index.mjs';
 ```
 
 #### isSlice( value )
@@ -75,7 +75,7 @@ var bool = isSlice( s );
 <script type="module">
 
 import Slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@esm/index.mjs';
-import isSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-slice@esm/index.mjs';
+import isSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-slice@v0.2.1-esm/index.mjs';
 
 var out = isSlice( new Slice( 0, 10, 1 ) );
 // returns true
